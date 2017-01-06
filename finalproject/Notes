@@ -1,4 +1,5 @@
 FINAL PROJECT
+
 Your final project assignment is to develop an interactive visualization for a data set of your choosing,
 and present a convincing and coherent story involving observations that you draw from this visualization.
 As an alternative, we can also accept visualizations that explore a particular problem domain without
@@ -9,6 +10,7 @@ but the expectations for originality in the visualization and thoroughness in th
 now that you've been through the process a couple of times. You won't receive written feedback on the final project.
 
 USEFUL LINKS:
+
 http://martinjc.github.io/UK-GeoJSON/
 https://dragons8mycat.com/gis-data-sources/
 http://mappinglondon.co.uk/
@@ -23,8 +25,9 @@ https://www.kaggle.com/datasets?sortBy=relevance&group=all&search=london
 https://www.opendatasoft.com/a-comprehensive-list-of-all-open-data-portals-around-the-world/#/united-kingdom
 
 MY IDEA:
+
 I'd like to map movement within/in and out of London over time, either in terms of public transport/cycling
 (perhaps over 1 week, as it will be a lot of data) or migration (over years/decades). If migration, i'd also like to
 add some element to my "story" about different cultures in London, e.g. food. I'll get inspiration for interesting London
-map visualisations from here (http://mappinglondon.co.uk/category/data/) and there is some open data about transport in London here
-(https://tfl.gov.uk/info-for/open-data-users/). Hopefully not too adventurous for me...
+map visualisations from http://mappinglondon.co.uk/category/data/ and there is some open data about transport in London,
+https://tfl.gov.uk/info-for/open-data-users/. Hopefully not too adventurous for me...
