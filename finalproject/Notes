@@ -1,4 +1,30 @@
-Final Project
-Your final project assignment is to develop an interactive visualization for a data set of your choosing, and present a convincing and coherent story involving observations that you draw from this visualization. As an alternative, we can also accept visualizations that explore a particular problem domain without a specific data set (e.g. visualizing how a complex algorithm or protocol works), but also in this case, there should be focus on interactivity and storytelling. Note that all projects must be pre-approved through the Absalon Discussion page. The final project will be evaluated similar to how weekly assignments were evaluated, but the expectations for originality in the visualization and thoroughness in the data interpretation will be higher now that you've been through the process a couple of times. You won't receive written feedback on the final project.
+FINAL PROJECT
+Your final project assignment is to develop an interactive visualization for a data set of your choosing,
+and present a convincing and coherent story involving observations that you draw from this visualization.
+As an alternative, we can also accept visualizations that explore a particular problem domain without
+a specific data set (e.g. visualizing how a complex algorithm or protocol works), but also in this case,
+there should be focus on interactivity and storytelling. Note that all projects must be pre-approved through the
+Absalon Discussion page. The final project will be evaluated similar to how weekly assignments were evaluated,
+but the expectations for originality in the visualization and thoroughness in the data interpretation will be higher
+now that you've been through the process a couple of times. You won't receive written feedback on the final project.
 
+USEFUL LINKS:
+http://martinjc.github.io/UK-GeoJSON/
+https://dragons8mycat.com/gis-data-sources/
+http://mappinglondon.co.uk/
+https://data.cdrc.ac.uk/dataset/top-country-of-birth
+https://data.gov.uk/data/search?res_format=CSV&theme-primary=Mapping&res_format=GeoJSON&page=5
+http://neighbourhood.statistics.gov.uk/dissemination/LeadHome.do?a=7&i=1001&m=0&r=1&s=1483484250502&enc=1&extendedList=true&nav=A&areaSearchText=england
+http://www.sharegeo.ac.uk/handle/10672/163
+https://data.london.gov.uk/dataset?q=migration&res_format=CSV
+http://www.londonlayout.co.uk/online.htm
+https://data.sfgov.org/Geographic-Locations-and-Boundaries/Realtor-Neighborhoods/5gzd-g9ns
+https://www.kaggle.com/datasets?sortBy=relevance&group=all&search=london
+https://www.opendatasoft.com/a-comprehensive-list-of-all-open-data-portals-around-the-world/#/united-kingdom
 
+MY IDEA:
+I'd like to map movement within/in and out of London over time, either in terms of public transport/cycling
+(perhaps over 1 week, as it will be a lot of data) or migration (over years/decades). If migration, i'd also like to
+add some element to my "story" about different cultures in London, e.g. food. I'll get inspiration for interesting London
+map visualisations from here (http://mappinglondon.co.uk/category/data/) and there is some open data about transport in London here
+(https://tfl.gov.uk/info-for/open-data-users/). Hopefully not too adventurous for me...
