@@ -26,6 +26,8 @@ https://data.sfgov.org/Geographic-Locations-and-Boundaries/Realtor-Neighborhoods
 https://www.kaggle.com/datasets?sortBy=relevance&group=all&search=london
 https://www.opendatasoft.com/a-comprehensive-list-of-all-open-data-portals-around-the-world/#/united-kingdom
 
+http://kartograph.org/ - nice map templates using Javascript and Python
+
 MY IDEA:
 
 I'd like to map movement within/in and out of London over time, either in terms of public transport/cycling
