@@ -1,0 +1,34 @@
+name,Remain,Leave,Choice,Remain_percentage,Leave_percentage
+Barking and Dagenham,27750,46130,Leave,0.38,0.62
+Barnet,60823,39387,Remain,0.61,0.39
+Bexley,47603,80886,Leave,0.37,0.63
+Brent,72523,48881,Remain,0.60,0.40
+Bromley,92398,90034,Remain,0.51,0.49
+Camden,71295,23838,Remain,0.75,0.25
+City of London,3312,1087,Remain,0.75,0.25
+Croydon,92913,78221,Remain,0.54,0.46
+Ealing,90024,59017,Remain,0.60,0.40
+Enfield,76425,60481,Remain,0.56,0.44
+Greenwich,65248,52117,Remain,0.56,0.44
+Hackney,83398,22868,Remain,0.78,0.22
+Hammersmith and Fulham,56188,24054,Remain,0.70,0.30
+Haringey,79991,25855,Remain,0.76,0.24
+Harrow,64042,53183,Remain,0.55,0.45
+Havering,42201,96885,Leave,0.30,0.70
+Hillingdon,58040,74982,Leave,0.44,0.56
+Hounslow,58755,56321,Remain,0.51,0.49
+Islington,76420,25180,Remain,0.75,0.25
+Kensington and Chelsea,37601,17138,Remain,0.69,0.31
+Kingston upon Thames,52533,32737,Remain,0.62,0.38
+Lambeth,111584,30340,Remain,0.79,0.21
+Lewisham,86995,37518,Remain,0.70,0.30
+Merton,63003,37097,Remain,0.63,0.37
+Newham,55328,49371,Remain,0.53,0.47
+Redbridge,69213,59020,Remain,0.54,0.46
+Richmond upon Thames,75396,33410,Remain,0.69,0.31
+Southwark,94293,35209,Remain,0.73,0.27
+Sutton,49319,57241,Leave,0.46,0.54
+Tower Hamlets,73011,35244,Remain,0.67,0.33
+Waltham Forest,64156,44395,Remain,0.59,0.41
+Wandsworth,118463,39421,Remain,0.75,0.25
+Westminster,53928,24268,Remain,0.69,0.31
