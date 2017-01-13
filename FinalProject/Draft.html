@@ -4,10 +4,6 @@
   <head>
     
     <title>Movement in London</title>
-    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="london_boroughs_proper.geojson"></script>
-    <script type="text/javascript" src="tooltips.js"></script>
     
     <style>
     </style>
@@ -19,30 +15,6 @@
      <div id="title" style="background-color: #EC0B43;">
       <h1 align="center"> Final Project: Movement in London </h1>
     </div>
-    <script>
-	      
-	var color = d3.scale.category20()
-        var width = 840,
-            height = 696;
-        var svg = d3.select( "body" )
-          .append( "svg" )
-          .attr( "width", width )
-          .attr( "height", height );
-        var ldn_boroughs = svg.append( "g" );
-        var albersProjection = d3.geo.albers()
-          .scale( 190000 )
-          .rotate( [0.127975,0] )
-          .center( [0, 51.507357] )
-          .translate( [width/2,height/2.5] );
-        var geoPath = d3.geo.path()
-            .projection( albersProjection );
-        ldn_boroughs.selectAll( "path" )
-          .data( ldn_boroughs_geojson.features )
-          .enter()
-          .append( "path" )
-          .attr( "fill", "#7FFF00" )
-          .attr( "d", geoPath );
-      </script>
     
   </body>
   
