@@ -28,7 +28,7 @@
           .append( "svg" )
           .attr( "width", width )
           .attr( "height", height );
-        var sfpd_districts = svg.append( "g" );
+        var ldn_boroughs = svg.append( "g" );
         var albersProjection = d3.geo.albers()
           .scale( 250000 )
           .rotate( [0.127975,0] )
@@ -36,33 +36,12 @@
           .translate( [width/2,height/2.5] );
         var geoPath = d3.geo.path()
             .projection( albersProjection );
-        sfpd_districts.selectAll( "path" )
-          .data( sfpd_districts_geojson.features )
+        ldn_boroughs.selectAll( "path" )
+          .data( ldn_boroughs_geojson.features )
           .enter()
           .append( "path" )
           .attr( "fill", "#7FFF00" )
           .attr( "d", geoPath );
-        var crimes = svg.append( "g" );
-        crimes.selectAll( "path" )
-          .data( sf_crime_geojson.features )
-          .enter()
-          .append( "path" )
-          .attr( "fill", function (d){console.log(color(d.properties.Category));
-			      return color(d.properties.Category); })
-	  .attr( "stroke", "#999" )
-          //.attr("r", 0.1)
-          .attr( "d", geoPath )
-	  .on("mouseover", 
-                    function(d) {
-                      d3.select(this).attr("fill", "#999");
-		  	d3.text(function(d) { return d.properties.Category; });
-                    })
-           .on("mouseout", 
-                    function(d) {
-                      d3.select(this).attr("fill",function (d){return color(d.properties.Category); });
-                    })
-	  .call(d3.helper.tooltip(function (d) {return "Date: <b>" + d.properties.Dates + "</b><br/>Category: " + d.properties.Category + "</b><br/>Resolution: " + d.properties.Resolution + "</b><br/>Description: " + d.properties.Descript;}));
-	  
       </script>
     
   </body>
