@@ -2,12 +2,12 @@ var fs = require('fs');
 var csv = require('csv');
 
 // ----------------- SETTINGS
-var geoJsonColumnName = 'FIPS';
-var csvColumnName = 'FIPS';
+var geoJsonColumnName = 'cartodb_id';
+var csvColumnName = 'cartodb_id';
 var castColumnsToNumber = true;
 // ------------------ END SETTINGS
 
-csv().from.path(__dirname + '/in.csv', {
+csv().from.path(__dirname + '/londondataexceptcoods.csv', {
 	delimiter: ',',
 	escape: '"'
 }).to.array(function(csvData) {
@@ -15,7 +15,7 @@ csv().from.path(__dirname + '/in.csv', {
 	var joinColumnIndex = csvData[0].indexOf(csvColumnName);
 
 	// read the geojson file
-	fs.readFile(__dirname + '/in.geojson', 'utf8', function(err, data) {
+	fs.readFile(__dirname + '/london_boroughs_proper.geojson', 'utf8', function(err, data) {
 		if (err) {
 			return console.log(err);
 		}
@@ -33,7 +33,7 @@ csv().from.path(__dirname + '/in.csv', {
 			if (err) {
 				console.log(err);
 			} else {
-				console.log("GeoJSON saved to out.geojson'");
+				console.log("GeoJSON saved to london_out.geojson'");
 			}
 		});
 	});
