@@ -49,3 +49,4 @@ https://data.london.gov.uk/dataset/office-national-statistics-ons-population-est
 https://data.london.gov.uk/dataset/london-borough-profiles
 
 Write about data sources, from the websites and front pages of excel booklets.
+Write that I used Python to merge CSV files and remove columns. Used a script from https://github.com/gavinr/geojson-csv-join to merge csv and geojson files. Then used cartodb.com.
