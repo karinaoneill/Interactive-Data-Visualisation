@@ -7,7 +7,7 @@ var csvColumnName = 'cartodb_id';
 var castColumnsToNumber = true;
 // ------------------ END SETTINGS
 
-csv().from.path(__dirname + '/londondataexceptcoods.csv', {
+csv().from.path(__dirname + '/intnetpopdata.csv', {
 	delimiter: ',',
 	escape: '"'
 }).to.array(function(csvData) {
@@ -29,11 +29,11 @@ csv().from.path(__dirname + '/londondataexceptcoods.csv', {
 		var joinedData = getJoinedData(geojson, csvData, joinColumnIndex);
 
 		// write out the joinedData
-		fs.writeFile(__dirname + '/out.geojson', JSON.stringify(joinedData, null, 4), function(err) {
+		fs.writeFile(__dirname + '/netmigout.geojson', JSON.stringify(joinedData, null, 4), function(err) {
 			if (err) {
 				console.log(err);
 			} else {
-				console.log("GeoJSON saved to london_out.geojson'");
+				console.log("GeoJSON saved to netmigout.geojson'");
 			}
 		});
 	});
