@@ -8,7 +8,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="sfpd_districts.geojson"></script>
+    <script src="london_boroughs_proper.geojson"></script>
     <script src="sf_crime.geojson"></script>
     <script type="text/javascript" src="tooltips.js"></script>
    <style>
@@ -131,16 +131,16 @@ p {
           .append( "svg" )
           .attr( "width", width )
           .attr( "height", height );
-        var sfpd_districts = svg.append( "g" );
+        var ldn_boroughs = svg.append( "g" );
         var albersProjection = d3.geo.albers()
           .scale( 250000 )
-          .rotate( [122.419,0] )
-          .center( [0, 37.775] )
+          .rotate( [0.1278,0] )
+          .center( [0, 51.5074] )
           .translate( [width/2,height/2.5] );
         var geoPath = d3.geo.path()
             .projection( albersProjection );
-        sfpd_districts.selectAll( "path" )
-          .data( sfpd_districts_geojson.features )
+        ldn_boroughs.selectAll( "path" )
+          .data( ldn_boroughs_geojson.features )
           .enter()
           .append( "path" )
           .attr( "fill", "#A9D8C8" )
