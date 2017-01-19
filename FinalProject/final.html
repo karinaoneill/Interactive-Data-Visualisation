@@ -122,12 +122,12 @@ p {
     <div id="international_migration" class="offset panel panel-default">
          <h2 class="panel-heading">International Migration (still to do this map)</h2>
     	 <p class="panel-body">Add some blabla, maybe also add a line/bar graph.</p>
-	 <script class="panel-body">
+	 <script>
 	      
 	var color = d3.scale.category20()
         var width = 840,
             height = 696;
-        var svg = d3.select( "body" )
+        var svg = d3.select("#international_migration")
           .append( "svg" )
           .attr( "width", width )
           .attr( "height", height );
