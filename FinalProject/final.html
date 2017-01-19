@@ -90,7 +90,51 @@ p {
     <div id="international_migration" class="offset panel panel-default">
          <h2 class="panel-heading">International Migration (still to do this map)</h2>
     	 <p class="panel-body">Add some blabla, maybe also add a line/bar graph.</p>
-         <iframe width="70%" height="580" frameborder="0" src="https://karinaoneill.carto.com/builder/14b97064-dce3-11e6-884d-0e3ff518bd15/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	 <script>
+	      
+	var color = d3.scale.category20()
+        var width = 840,
+            height = 696;
+        var svg = d3.select( "body" )
+          .append( "svg" )
+          .attr( "width", width )
+          .attr( "height", height );
+        var sfpd_districts = svg.append( "g" );
+        var albersProjection = d3.geo.albers()
+          .scale( 250000 )
+          .rotate( [122.419,0] )
+          .center( [0, 37.775] )
+          .translate( [width/2,height/2.5] );
+        var geoPath = d3.geo.path()
+            .projection( albersProjection );
+        sfpd_districts.selectAll( "path" )
+          .data( sfpd_districts_geojson.features )
+          .enter()
+          .append( "path" )
+          .attr( "fill", "#7FFF00" )
+          .attr( "d", geoPath );
+        var crimes = svg.append( "g" );
+        crimes.selectAll( "path" )
+          .data( sf_crime_geojson.features )
+          .enter()
+          .append( "path" )
+          .attr( "fill", function (d){console.log(color(d.properties.Category));
+			      return color(d.properties.Category); })
+	  .attr( "stroke", "#999" )
+          //.attr("r", 0.1)
+          .attr( "d", geoPath )
+	  .on("mouseover", 
+                    function(d) {
+                      d3.select(this).attr("fill", "#999");
+		  	d3.text(function(d) { return d.properties.Category; });
+                    })
+           .on("mouseout", 
+                    function(d) {
+                      d3.select(this).attr("fill",function (d){return color(d.properties.Category); });
+                    })
+	  .call(d3.helper.tooltip(function (d) {return "Date: <b>" + d.properties.Dates + "</b><br/>Category: " + d.properties.Category + "</b><br/>Resolution: " + d.properties.Resolution + "</b><br/>Description: " + d.properties.Descript;}));
+	  
+      </script>
     	 <p class="panel-body">Hover to show foreign-born percentage. 2nd map here - largest, 2nd largest etc mig pop info on map is based on country of birth. Actually, will instead add a bar chart of the 2011 and 2014/15 migrant pops.</p>
 	 <iframe width="70%" height="580" frameborder="0" src="https://karinaoneill.carto.com/builder/14b97064-dce3-11e6-884d-0e3ff518bd15/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
     </div>
