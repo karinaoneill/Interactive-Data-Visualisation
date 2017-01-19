@@ -6,8 +6,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="sfpd_districts.geojson"></script>
+    <script src="sf_crime.geojson"></script>
+    <script type="text/javascript" src="tooltips.js"></script>
+	<style>
 body {margin:0;}
+   <style>
+      .bar {
+        fill: mediumpurple;
+      }
+      .bar:hover {
+        fill: chartreuse;
+      }
+      .axis--x path {
+        display: none;
+      }
+      .contentDiv {
+        background-color: "#caf0fb";
+        height: 200px;
+        position: bottom;
+        width: 200px;
+      }
+
+      .tooltip {
+	    background-color: rgba(0, 0, 0, 0.0);
+	    margin: 10px;
+	    height: 55px;
+	    width: 180px;
+	    padding-left: 10px;
+	    padding-top: 10px;
+	    -webkit-border-radius: 10px;
+	    -moz-border-radius: 10px;
+	    border-radius: 10px;
+	  }
 
 ul {
     list-style-type: none;
