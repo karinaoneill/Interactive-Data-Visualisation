@@ -133,9 +133,9 @@ p {
           .attr( "height", height );
         var ldn_boroughs = svg.append( "g" );
         var albersProjection = d3.geo.albers()
-          .scale( 250000 )
-          .rotate( [0.1278,0] )
-          .center( [0, 51.5074] )
+          .scale( 190000 )
+          .rotate( [0.128,0] )
+          .center( [0, 51.507] )
           .translate( [width/2,height/2.5] );
         var geoPath = d3.geo.path()
             .projection( albersProjection );
