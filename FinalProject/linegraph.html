@@ -57,7 +57,7 @@ var	svg = d3.select("body")
 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
  
 // Get the data
-d3.csv("data.csv", function(error, data) {
+d3.csv("linegraph.csv", function(error, data) {
 	data.forEach(function(d) {
 		d.pct_of_resident_population_born_abroad_2014 = +d.pct_of_resident_population_born_abroad_2014;
 		d.Leave_percentage = +d.Leave_percentage;
