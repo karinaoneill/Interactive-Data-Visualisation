@@ -1,2 +1,2 @@
 # Interactive Data Exploration
-Final. is my final project website.
+Finalproject/final.html is my final project website.
