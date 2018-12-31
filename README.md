@@ -6,9 +6,9 @@ final.html is the code for my final project website, built from scratch using D3
 
 ## Toolbox:
 
-HTML
-CSS
-Python
-D3.js
-CartoDB.com
-GeoJSON-CSV join script - https://github.com/gavinr/geojson-csv-join
+- HTML
+- CSS
+- Python
+- D3.js
+- CartoDB.com
+- [GeoJSON-CSV join script](https://github.com/gavinr/geojson-csv-join)
