@@ -2,8 +2,8 @@
 
 "London International Migration and Brexit"
 
-Website code: final.html
-The website: https://karinaoneill.github.io/Interactive-Data-Visualisation/final.html
+- Website code: final.html
+- The website: https://karinaoneill.github.io/Interactive-Data-Visualisation/final.html
 
 ## Toolbox:
 
