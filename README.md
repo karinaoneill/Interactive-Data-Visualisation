@@ -5,7 +5,7 @@
 
 ## Toolbox:
 
-- Data source: https://data.london.gov.uk/dataset/net-migration-and-natural-change-region
+- Data source (london_boroughs_proper.geojson): https://data.london.gov.uk/dataset/net-migration-and-natural-change-region
 - HTML
 - CSS
 - Python
