@@ -1,6 +1,4 @@
-# Interactive Data Exploration
-
-"London International Migration and Brexit"
+# Interactive Data Exploration - "London International Migration and Brexit"
 
 - Website code: final.html
 - The website: https://karinaoneill.github.io/Interactive-Data-Visualisation/final.html
