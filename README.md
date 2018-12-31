@@ -5,7 +5,7 @@
 
 ## Toolbox:
 
-- Data source (london_boroughs_proper.geojson): https://data.london.gov.uk/dataset/net-migration-and-natural-change-region
+- Data sources (london_boroughs_proper.geojson & ): https://data.london.gov.uk/dataset/net-migration-and-natural-change-region , http://www.standard.co.uk/news/politics/london-eu-referendum-results-borough-by-borough-breakdown-of-brexit-poll-a3279731.html
 - HTML
 - CSS
 - Python
