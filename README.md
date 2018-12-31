@@ -12,5 +12,5 @@
 - CSS
 - Python
 - D3.js
-- CartoDB.com
+- [CartoDB.com](https://karinaoneill.carto.com/me)
 - [GeoJSON-CSV join script](https://github.com/gavinr/geojson-csv-join)
